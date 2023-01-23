@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Analytic Dashboard</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/MainPage.css" />
+  </head>
+  <body>
+    <!-- Dashboard -->
+    <div class="dashboard">
+      <!-- Menu -->
+      <div class="menu flex-c">
+        <div class="logo">
+          <div class="icon">
+            <ion-img src="./img/ServerLogo.png" alt="ServerLogo"></ion-img>
+          </div>
+        </div>
+        <div class="navigation">
+          <button type='button' class="dashboardbutton">
+            <div class="icon">
+            
+              <ion-icon name="filter-circle-outline"></ion-icon>
+            </div>
+          </button>
+          
+          
+          <div class="icon">
+            <ion-icon name="file-tray-full-outline"></ion-icon>
+          </div>
+          <div class="icon">
+            <ion-icon name="mail-unread-outline"></ion-icon>
+          </div>
+          <div class="icon">
+            <ion-icon name="pulse-outline"></ion-icon>
+          </div>
+          <div class="icon">
+            <ion-icon name="storefront-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="settings">
+          <div class="icon">
+            <ion-icon name="settings-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <!-- End Menu -->
+
+      <div class="content">
+        <!-- Main Content -->
+        <div class="main-content">
+          <!-- Head -->
+          <div class="head flex">
+            <h1>Good Morning 👋</h1>
+
+            <div class="box flex time-period">
+              Monthly
+              <ion-icon class="angle" name="caret-down-outline"></ion-icon>
+            </div>
+            <div class="box flex">
+              <ion-icon name="search-outline"></ion-icon>
+            </div>
+          </div>
+          <!-- End Head -->
+
+          <!-- Stats -->
+          <div class="stats flex">
+            <div class="stats-box sales">
+              <h2 class="heading">Sales</h2>
+              <canvas id="sales"></canvas>
+            </div>
+
+            <div class="stats-box earning">
+              <h2 class="heading">Earning</h2>
+              <div class="earning-amount flex-c">
+                <div class="earning-icon flex">
+                  <ion-icon name="logo-paypal"></ion-icon>
+                </div>
+                <p>$9125.33</p>
+              </div>
+              <canvas id="earning"></canvas>
+            </div>
+          </div>
+
+          <!-- Product Stats -->
+          <div class="product-stats flex">
+            <div class="product-sales stats-box">
+              <h2 class="heading">Sales</h2>
+              <canvas id="products"></canvas>
+            </div>
+
+            <div class="top-selling stats-box">
+              <h2 class="heading">Top Selling Product</h2>
+              <table class="top-selling-products" height="100%" width="100%">
+                <tr>
+                  <th>Product</th>
+                  <th>Price</th>
+                  <th>Sold</th>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="product-name flex">
+                      <div class="icon">
+                        <ion-icon name="medkit-outline"></ion-icon>
+                      </div>
+                      <p>Kits</p>
+                    </div>
+                  </td>
+                  <td>$200</td>
+                  <td>96</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="product-name iphone flex">
+                      <div class="icon">
+                        <ion-icon name="hammer-outline"></ion-icon>
+                      </div>
+                      <p>Items</p>
+                    </div>
+                  </td>
+                  <td>$300</td>
+                  <td>121</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="product-name windows flex">
+                      <div class="icon">
+                        <ion-icon name="add-circle-outline"></ion-icon>
+                      </div>
+                      <p>Other</p>
+                    </div>
+                  </td>
+                  <td>$180</td>
+                  <td>195</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <!-- Product Stats -->
+
+          <!-- End Stats -->
+        </div>
+        <!-- End Main Content -->
+
+        <!-- Profile  -->
+        <div class="profile">
+
+          <div class="activities">
+            <div class="title flex">
+              <h2 class="heading">Activity</h2>
+              <button class="cta" id="activityviewall">
+                <span class="hover-underline-animation"> View All </span>
+                <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                    <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
+                </svg>
+            </button>
+            </div>
+          </div>
+          
+
+          <div class="activity flex">
+            <div class="icon">
+              <ion-icon name="wallet-outline"></ion-icon>
+            </div>
+            <div class="task">
+              <h2>10x Pve monthly</h2>
+              <p>$125</p>
+            </div>
+            <div class="time">Time</div>
+          </div>
+
+          <div class="activity flex">
+            <div class="icon">
+              <ion-icon name="wallet-outline"></ion-icon>
+            </div>
+            <div class="task">
+              <h2>5x Pvp monthly</h2>
+              <p>$95</p>
+            </div>
+            <div class="time">Time</div>
+          </div>
+
+          <div class="activities">
+            <div class="title flex">
+              <h2 class="heading">ServerPop</h2>
+              <button class="cta" id="popviewall">
+                <span class="hover-underline-animation"> View All </span>
+                <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                    <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
+                </svg>
+            </button>
+            </div>
+          </div>
+
+
+        </div>
+        <!-- End Profile  -->
+      </div>
+    </div>
+    <!-- End Dashboard -->
+    <!-- Ion Icons Js -->\
+    <script src="./modules/jquery-3.6.3.js"></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+
+    <!-- Chart JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- JS -->
+    <script src="./js/MainPage.js"></script>
+  </body>
+</html>

@@ -1,0 +1,2 @@
+#!/usr/bin/env node
+require('../cli/index.js').main(Array.prototype.slice.call(process.argv, 2))

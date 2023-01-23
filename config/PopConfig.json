@@ -1,0 +1,12 @@
+{
+	"SetTimeout": 10000, 
+	"Servers": [
+        {
+      "ServerName": "US 3x Pvp",
+		"IP":"104.129.133.103",
+		"RconPort": 28716,
+		"RconPassword": "CHANGEME",
+        "CurrentPop": "Loading"
+		}
+	]
+}
